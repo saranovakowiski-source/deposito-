@@ -34,7 +34,6 @@
         }
          .intro {
           font-size: larger;
-          font-style: inherit;
         }
 
      </style>
@@ -57,13 +56,13 @@
    </main>
 </body>
 <script>
-     const button = document.querySelector("button");
-     button.addEventListener("click", buttonClicked);
+     const botao = document.querySelector("button");
+     botao.addEventListener("click", buttonClicked);
 
-     function buttonClicked () {
+     function buttonClicked (){
          console.log("just got clicked dude lol");
-         let text = button.querySelector("span")
-         text.textContent++;
+         let txt = botao.querySelector("span")
+         txt.textContent++;
           }
 </script>
 </html>
