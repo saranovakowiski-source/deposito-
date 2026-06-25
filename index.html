@@ -28,12 +28,12 @@
             height: 80px;
         }
           .artigo-autor {
-          font-weight: bold
-          font-size: large;
+          font-weight: bold;
           font-style: oblique;
+     
         }
          .intro {
-          font-size: larger;
+          font-size: large;
         }
 
      </style>
@@ -57,12 +57,13 @@
 </body>
 <script>
      const botao = document.querySelector("button");
-     botao.addEventListener("click", buttonClicked);
+     botao.addEventListener("click", botaoClicado);
 
-     function buttonClicked (){
+     function botaoClicado (){
          console.log("just got clicked dude lol");
-         let txt = botao.querySelector("span")
+         let txt = botao.querySelector("span");
          txt.textContent++;
           }
+
 </script>
 </html>
