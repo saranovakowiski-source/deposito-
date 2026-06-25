@@ -45,7 +45,19 @@
          <h2>My first post!</h2>
          <p class="artigo-autor">By: Sara Novakowiski</p>
          <p>Welc to my blog!!! I'm gonna post about... everything! Peripheral countries, wars and conflicts, leaders, history, islands, natural disasters, the political spectrums and, above all things, resistance!</p>
+         <button>💙 <span>0</span></button>
       </div>
-     </main>
-  </body>
+
+   </main>
+</body>
+<script>
+     const button = document.querySelector("button");
+     button.addEventListener("click, buttonClicked");
+
+     function buttonClicked () {
+         console.log("just got clicked dude lol");
+         let text = button.querySelector("span")
+         text.textContent++;
+          }
+</script>
 </html>
