@@ -1,71 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anarchogeo</title>
-     <style> 
-        header{
-             background-color: white
-             color: #0a2538
-             text-align: center;
-             max-width: 800px;
-             margin: 0 auto;
-             padding: 16px;
-             border: 5px solid 
-             #366e91
-        }
-        main {
-             background-color: white;
-             color: #0a2538; 
-             max-width: 800px; 
-             margin: 0 auto;
-             padding: 16px;
-             display: flex;
-             gap: 15px;
-        }
-        img{
-            width: 160px;
-            height: 80px;
-        }
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Anarchogeo</title>
+     <style>
+          header {
+               background-color: white color: #0a2538 text-align: center;
+               max-width: 800px;
+               margin: 0 auto;
+               padding: 16px;
+               border: 5px solid #366e91
+          }
+
+          main {
+               background-color: white;
+               color: #0a2538;
+               max-width: 800px;
+               margin: 0 auto;
+               padding: 16px;
+               gap: 15px;
+          }
+          article{
+               display: flex;
+          }
+
+          img {
+               width: 160px;
+               height: 80px;
+          }
+
           .artigo-autor {
-          font-weight: bold;
-          font-style: oblique;
+               font-weight: bold;
+               font-style: oblique;
 
-        }
-         .intro {
-          font-size: large;
-        }
+          }
 
+          .intro {
+               font-size: large;
+          }
      </style>
 </head>
 <body>
      <header>
-         <h1>Borderless Geography</h1>
-         <p>I'll share geopolitics things w u guys lolol </p>
-    </header>
-    <main>
-       <img src="Gemini_Generated_Image_fnskksfnskksfnsk.png" 
-            alt="No topo, há um brasão estilizado contendo um globo terrestre estilizado em linhas abstratas de latitude e longitude. No centro do globo, ergue-se o símbolo de um punho fechado que se integra sutilmente ao desenho de um compasso de geógrafo, formando a letra A (referência ao anarquismo). Na base do brasão, cruzam-se dois ramos de trigo e pequenas engrenagens industriais, com duas setas cruzadas logo abaixo.">
-       <div>
-         <h2>My first post!</h2>
-         <p class="artigo-autor">By: Sara Novakowiski</p>
-         <p class="intro">Welc to my blog!!! I'm gonna post about... everything! Peripheral countries, wars and conflicts, leaders, history, islands, natural disasters, the political spectrums and, above all things, resistance!</p>
-         <button>​❤️​​<span>0</span></button>
-         <button>👍​<span>0</span></button>
-      </div>
-
-   </main>
+          <h1>Borderless Geography</h1>
+          <p>I'll share geopolitics things w u guys lolol </p>
+      </header>
+      <main>
+         <article>
+             <img src="Gemini_Generated_Image_fnskksfnskksfnsk.png"
+                  alt="No topo, há um brasão estilizado contendo um globo terrestre estilizado em linhas abstratas de latitude e longitude. No centro do globo, ergue-se o símbolo de um punho fechado que se integra sutilmente ao desenho de um compasso de geógrafo, formando a letra A (referência ao anarquismo). Na base do brasão, cruzam-se dois ramos de trigo e pequenas engrenagens industriais, com duas setas cruzadas logo abaixo.">
+             <div>
+                 <h2>My first post!</h2>
+                 <p class="artigo-autor">By: Sara Novakowiski</p>
+                 <p class="intro">Welc to my blog!!! I'm gonna post about... everything! Peripheral countries, wars and
+                    conflicts, leaders, history, islands, natural disasters, the political spectrums and, above all
+                    things, resistance!</p>
+                 <button>​❤️​​<span>0</span></button>
+                 <button>👍​<span>0</span></button>
+          </div>
+     </article>
+     <article>
+          <img src="Gemini_Generated_Image_fnskksfnskksfnsk.png"
+               alt="No topo, há um brasão estilizado contendo um globo terrestre estilizado em linhas abstratas de latitude e longitude. No centro do globo, ergue-se o símbolo de um punho fechado que se integra sutilmente ao desenho de um compasso de geógrafo, formando a letra A (referência ao anarquismo). Na base do brasão, cruzam-se dois ramos de trigo e pequenas engrenagens industriais, com duas setas cruzadas logo abaixo.">
+          <div>
+               <h2>sup, mah folks?</h2>
+               <p class="artigo-autor">By: Sara Novakowiski</p>
+               <p class="intro">Welc to my blog!!! I'm gonna post about... everything! Peripheral countries, wars and
+                    conflicts, leaders, history, islands, natural disasters, the political spectrums and, above all
+                    things, resistance!</p>
+               <button>​❤️​​<span>0</span></button>
+               <button>👍​<span>0</span></button>
+          </div>
+     </article>
+     </main>
 </body>
 <script>
      const botoes = document.querySelectorAll("button");
 
-     botoes.forEach( function(botao){
-         botao.addEventListener("click", botaoClicado);
-         function botaoClicado(){
-             console.log("just got clicked dude lol");
-             let texto = botao.querySelector("span");
-             texto.textContent++;
+     botoes.forEach(function (botao) {
+          botao.addEventListener("click", botaoClicado);
+          function botaoClicado() {
+               console.log("just got clicked dude lol");
+               let texto = botao.querySelector("span");
+               texto.textContent++;
           }
      })
 
