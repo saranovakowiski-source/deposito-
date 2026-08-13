@@ -24,9 +24,9 @@ main {
 
 article {
     display: flex;
-    border: 2px solid #0a2538; /
-    border-radius: 8px;        
-    
+    /* --- CORREÇÃO DA BORDA AQUI --- */
+    border: 2px solid #0a2538; /* Adicionado o 'solid' e ajustado para 2px */
+    border-radius: 8px;        /* Opcional: deixa os cantos da borda arredondados */
     margin: 16px;
     gap: 16px;
     padding: 16px;
@@ -34,7 +34,7 @@ article {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 img {
@@ -47,9 +47,6 @@ img {
 
 .conteudo {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
 }
 
 .artigo-autor {
@@ -66,8 +63,7 @@ img {
 .reacoes {
     display: flex;
     gap: 10px;
-    justify-content: center; 
-    margin-top: auto;        
+    justify-content: center; /* Centraliza os botões dentro do card */
 }
 
 button {
