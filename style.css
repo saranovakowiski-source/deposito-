@@ -23,11 +23,13 @@ article {
     align-items: flex-start;
 }
 
+/* --- AJUSTE DEFINITIVO DAS 4 IMAGENS --- */
 img {
-    width: 160px;
-    height: 120px; 
-    object-fit: contain; 
-    flex-shrink: 0; 
+    width: 160px;          /* Largura fixa padrão */
+    height: auto;          /* A altura se adapta sozinha a cada foto */
+    max-height: 160px;     /* Impede que imagens muito altas fiquem gigantes */
+    object-fit: contain;   /* Garante 0% de corte */
+    flex-shrink: 0;        /* Impede de esmagar na tela */
 }
 
 .conteudo {
