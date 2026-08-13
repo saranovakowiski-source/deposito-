@@ -25,8 +25,9 @@ article {
 
 img {
     width: 160px;
-    height: 80px;
-    object-fit: cover;
+    height: 120px; 
+    object-fit: contain; 
+    flex-shrink: 0; 
 }
 
 .conteudo {
