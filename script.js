@@ -14,4 +14,17 @@ botoes.forEach(function (botao) {
             curtiu = false;
         }
     }
-});
+})
+
+const btnTemaClaro = document .querySelector (".btn-tema-claro")
+
+btnTemaClaro.addEventListener("click", botaoClicado)
+
+function mudaTema() {
+    const corpoPagina = document.body;
+    if(corpoPagina.classList.contains("tema-claro")) {
+       corpoPagina.classList.remove("tema-claro");
+    } else {
+         corpoPagina.classList.add("tema-claro");
+    }
+}
