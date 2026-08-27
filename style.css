@@ -102,3 +102,13 @@ button {
     padding: 6px 10px;
     cursor: pointer;
 }
+
+.btn-tema-claro {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    font-size: large;
+    padding: 12px;
+    background-color: rgb(117, 149, 238) ;
+    border-radius: 50%;
+}
