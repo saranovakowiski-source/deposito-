@@ -1,11 +1,12 @@
-const botoes = document.querySelectorAll("button");
+// Botões de reação
+const botoesReacao = document.querySelectorAll(".reacoes button");
 
-botoes.forEach(function (botao) {
+botoesReacao.forEach(function (botao) {
     let curtiu = false;
-    botao.addEventListener("click", botaoClicado);
-    function botaoClicado() {
-        console.log("js got clicked");
-        let texto = botao.querySelector("span");
+
+    botao.addEventListener("click", function () {
+        const texto = botao.querySelector("span");
+
         if (curtiu === false) {
             texto.textContent++;
             curtiu = true;
@@ -13,18 +14,23 @@ botoes.forEach(function (botao) {
             texto.textContent--;
             curtiu = false;
         }
-    }
-})
+    });
+});
 
-const btnTemaClaro = document .querySelector (".btn-tema-claro")
 
-btnTemaClaro.addEventListener("click", botaoClicado)
+// Botão de mudar tema
+const btnTemaClaro = document.querySelector(".btn-tema-claro");
+
+btnTemaClaro.addEventListener("click", mudaTema);
 
 function mudaTema() {
     const corpoPagina = document.body;
-    if(corpoPagina.classList.contains("tema-claro")) {
-       corpoPagina.classList.remove("tema-claro");
+
+    if (corpoPagina.classList.contains("tema-claro")) {
+        corpoPagina.classList.remove("tema-claro");
+        btnTemaClaro.textContent = "🌕";
     } else {
-         corpoPagina.classList.add("tema-claro");
+        corpoPagina.classList.add("tema-claro");
+        btnTemaClaro.textContent = "🌑";
     }
 }
