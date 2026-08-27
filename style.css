@@ -5,10 +5,34 @@
     --cor-texto: rgb(61, 104, 223);
     --cor-contraste: rgb(4, 23, 77);
     --cor-botao:rgb(6, 34, 112);
+
+    --fonte-texto: 'Segoe UI', sans-serif;
+}
+
+.tema-claro {
+    --cor-primaria: rgb(117, 149, 238);
+    --cor-secundaria:rgb(41, 77, 175);
+    --cor-fundo: rgb(159, 181, 241);
+    --cor-texto: rgb(21, 60, 168);
+    --cor-contraste: rgb(130, 160, 243);
+    --cor-botao:rgb(74, 117, 236);
+}
+
+.tema-claro a {
+    color: var(--cor-secundaria)
+}
+
+.tema-claro p {
+    color: var(--cor-texto)
+}
+
+.tema-claro header p {
+    color: var(--cor-contraste)
 }
 
 body {
     max-width: 100vw;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 header {
